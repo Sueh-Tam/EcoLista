@@ -12,6 +12,7 @@ class ListItem extends Model
     ];
 
     protected $casts = [
+        'quantity' => 'decimal:3',
         'unit_price' => 'decimal:2',
         'promo_price' => 'decimal:2',
         'item_total' => 'decimal:2',
