@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "framework": "vite",
+    "framework": null,
     "name": "ecolista",
-    "builds": [
-        { "src": "api/index.php", "use": "vercel-php@0.7.2" },
-        { "src": "public/index.php", "use": "vercel-php@0.7.2" }
-    ],
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.7.2" },
+        "public/index.php": { "runtime": "vercel-php@0.7.2" }
+    },
     "routes": [
         {
             "src": "/(build|assets)/(.*)",
